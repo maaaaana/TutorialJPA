@@ -12,7 +12,10 @@
             <tr><th>国名</th><td><input type="text" name="name" th:value="*{name}"></td></tr>
             <tr><th>人口</th><td><input type="text" name="population" th:value="*{population}"></td></tr>
         </table>
-        <button type="submit">送信</button>
+        <div>
+            <button type="submit">送信</button>
+            <a th:href="@{/country/list}" style="margin-left: 10px;">一覧に戻る</a>
+        </div>
     </form>
 </body>
 </html>
